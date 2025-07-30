@@ -1,0 +1,10 @@
+@import '../../assets/scss/mixins';
+
+.card {
+  @include card;
+
+  &.hover {
+    @include hover-lift;
+    cursor: pointer;
+  }
+}

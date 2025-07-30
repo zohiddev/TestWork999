@@ -1,0 +1,33 @@
+@import '../../assets/scss/mixins';
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+.label {
+  font-weight: 600;
+  color: $text-primary;
+  font-size: $font-sm;
+}
+
+.input {
+  @include input-base;
+
+  &.error {
+    border-color: $danger;
+    background: #fed7d7;
+
+    &:focus {
+      border-color: $danger;
+      box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+    }
+  }
+}
+
+.errorMessage {
+  color: $danger;
+  font-size: $font-sm;
+  font-weight: 500;
+}

@@ -1,0 +1,40 @@
+@import '../../styles/mixins';
+
+.topBar {
+  background: $text-primary;
+  color: white;
+  padding: $spacing-sm 0;
+  font-size: $font-sm;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo {
+  display: flex;
+  gap: $spacing-lg;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+}
+
+@include tablet {
+  .content {
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+  
+  .contactInfo {
+    gap: $spacing-md;
+  }
+  
+  .contactItem {
+    font-size: 12px;
+  }
+}

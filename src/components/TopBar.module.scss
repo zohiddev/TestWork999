@@ -1,0 +1,66 @@
+.topBar {
+  background: #2d3748;
+  color: white;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 24px;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.loginButton {
+  background: #667eea;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #5a67d8;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactInfo {
+    gap: 16px;
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

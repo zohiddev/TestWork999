@@ -1,0 +1,52 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #667eea;
+  }
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+}
+
+.cartButton {
+  background: #48bb78;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #38a169;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+}

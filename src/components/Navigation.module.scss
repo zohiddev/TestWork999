@@ -1,0 +1,40 @@
+@import '../assets/scss/mixins';
+
+.navigation {
+  background: $background-light;
+  border-bottom: 1px solid $border;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  display: block;
+  padding: $spacing-md $spacing-lg;
+  color: $text-secondary;
+  font-weight: 500;
+  transition: all $transition-fast;
+  border-bottom: 3px solid transparent;
+
+  &:hover,
+  &.active {
+    color: $primary;
+    background: $background-gray;
+    border-bottom-color: $primary;
+  }
+}
+
+@include tablet {
+  .navList {
+    flex-wrap: wrap;
+  }
+
+  .navLink {
+    padding: 12px $spacing-md;
+    font-size: $font-sm;
+  }
+}

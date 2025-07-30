@@ -1,0 +1,28 @@
+@import '../../assets/scss/mixins';
+
+.button {
+  @include button-base;
+
+  &.primary {
+    @include button-primary;
+  }
+
+  &.secondary {
+    @include button-secondary;
+  }
+
+  &.sm {
+    padding: 8px $spacing-md;
+    font-size: $font-sm;
+  }
+
+  &.md {
+    padding: 12px $spacing-lg;
+    font-size: $font-base;
+  }
+
+  &.lg {
+    padding: $spacing-md $spacing-xl;
+    font-size: $font-lg;
+  }
+}
